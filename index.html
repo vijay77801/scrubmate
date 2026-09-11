@@ -16,7 +16,6 @@
   href="https://fonts.googleapis.com/css2?family=Merienda:wght@600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
   rel="stylesheet"
 >
-  >
 
   <style>
     :root {
@@ -3231,33 +3230,78 @@ body.telugu-mode .sm-footer-mobile-logo{
   }
 }
 
+
+
+/* =========================================================
+   SERVICE DETAIL PAGE LINKS
+   Each service card redirects to its own HTML page.
+   ========================================================= */
+.service-card-link{
+  display:block;
+  min-width:0;
+  color:inherit;
+  text-decoration:none;
+}
+
+.service-card-link .service-card{
+  height:100%;
+}
+
+.service-card-link:visited,
+.service-card-link:hover,
+.service-card-link:active{
+  color:inherit;
+  text-decoration:none;
+}
+
+
+
+/* =========================================================
+   FIXED SERVICE PAGE LINKS
+   Service cards now navigate to separate HTML files.
+   ========================================================= */
+.service-card-link{
+  display:block;
+  color:inherit;
+  text-decoration:none;
+  min-width:0;
+}
+
+.service-card-link:visited,
+.service-card-link:hover,
+.service-card-link:focus,
+.service-card-link:active{
+  color:inherit;
+  text-decoration:none;
+}
+
 </style>
-  <link rel="preload" as="image" href="image1.png">
-  <link rel="preload" as="image" href="acclean.png">
-  <link rel="preload" as="image" href="bathroomclean.png">
-  <link rel="preload" as="image" href="bedroomclean.png">
-  <link rel="preload" as="image" href="bikeclean.png">
-  <link rel="preload" as="image" href="dustingwiping.png">
-  <link rel="preload" as="image" href="fanclean.png">
-  <link rel="preload" as="image" href="fridgeclean.png">
-  <link rel="preload" as="image" href="fullbildong.png">
-  <link rel="preload" as="image" href="ironing.png">
-  <link rel="preload" as="image" href="kitchencleaning.png">
-  <link rel="preload" as="image" href="kitechhelp.png">
-  <link rel="preload" as="image" href="mirrorsclean.png">
-  <link rel="preload" as="image" href="packing.png">
-  <link rel="preload" as="image" href="shopclean.png">
-  <link rel="preload" as="image" href="stageclean.png">
-  <link rel="preload" as="image" href="sweppingmopping.png.png">
-  <link rel="preload" as="image" href="utlizesclean.png">
-  <link rel="preload" as="image" href="washing.png">
-  <link rel="preload" as="image" href="workimage1.png">
-  <link rel="preload" as="image" href="workimage2.png">
-  <link rel="preload" as="image" href="workimage3.png">
-  <link rel="preload" as="image" href="workimage4.png">
-  <link rel="preload" as="image" href="trustedhelpers.png">
-  <link rel="preload" as="image" href="flexibleimage.png">
-  <link rel="preload" as="image" href="help image.png">
+  <link rel="preload" as="image" href="./image1.png">
+  <link rel="preload" as="image" href="./acclean.png">
+  <link rel="preload" as="image" href="./bathroomclean.png">
+  <link rel="preload" as="image" href="./bedroomclean.png">
+  <link rel="preload" as="image" href="./bikeclean.png">
+  <link rel="preload" as="image" href="./dustingwiping.png">
+  <link rel="preload" as="image" href="./fanclean.png">
+  <link rel="preload" as="image" href="./fridgeclean.png">
+  <link rel="preload" as="image" href="./fullbildong.png">
+  <link rel="preload" as="image" href="./ironing.png">
+  <link rel="preload" as="image" href="./kitchencleaning.png">
+  <link rel="preload" as="image" href="./kitechhelp.png">
+  <link rel="preload" as="image" href="./mirrorsclean.png">
+  <link rel="preload" as="image" href="./packing.png">
+  <link rel="preload" as="image" href="./shopclean.png">
+  <link rel="preload" as="image" href="./stageclean.png">
+  <link rel="preload" as="image" href="./sweppingmopping.png.png">
+  <link rel="preload" as="image" href="./utlizesclean.png">
+  <link rel="preload" as="image" href="./washing.png">
+  <link rel="preload" as="image" href="./workimage1.png">
+  <link rel="preload" as="image" href="./workimage2.png">
+  <link rel="preload" as="image" href="./workimage3.png">
+  <link rel="preload" as="image" href="./workimage4.png">
+  <link rel="preload" as="image" href="./trustedhelpers.png">
+  <link rel="preload" as="image" href="./flexibleimage.png">
+  <link rel="preload" as="image" href="./help image.png">
 </head>
 
 <body>
@@ -3312,7 +3356,7 @@ body.telugu-mode .sm-footer-mobile-logo{
 
 <nav class="navbar">
 
-  <a href="/" class="brand">
+  <a href="./index.html" class="brand">
     ScrubMate
   </a>
 
@@ -3348,99 +3392,99 @@ body.telugu-mode .sm-footer-mobile-logo{
 
         <div class="services-nav-grid">
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="acclean.png" alt="AC Cleaning">
+          <a href="./ac.html" class="services-nav-item">
+            <img src="./acclean.png" alt="AC Cleaning">
             <span>AC Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="bathroomclean.png" alt="Bathroom Cleaning">
+          <a href="./bathroom.html" class="services-nav-item">
+            <img src="./bathroomclean.png" alt="Bathroom Cleaning">
             <span>Bathroom Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="bedroomclean.png" alt="Bedroom Cleaning">
+          <a href="./bedroom.html" class="services-nav-item">
+            <img src="./bedroomclean.png" alt="Bedroom Cleaning">
             <span>Bedroom Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="bikeclean.png" alt="Bike Cleaning">
+          <a href="./bike.html" class="services-nav-item">
+            <img src="./bikeclean.png" alt="Bike Cleaning">
             <span>Bike Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="dustingwiping.png" alt="Dusting Wiping">
+          <a href="./dusting-wiping.html" class="services-nav-item">
+            <img src="./dustingwiping.png" alt="Dusting Wiping">
             <span>Dusting Wiping</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="fanclean.png" alt="Fan Clean">
+          <a href="./fan.html" class="services-nav-item">
+            <img src="./fanclean.png" alt="Fan Clean">
             <span>Fan Clean</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="fridgeclean.png" alt="Fridge Cleaning">
+          <a href="./fridge.html" class="services-nav-item">
+            <img src="./fridgeclean.png" alt="Fridge Cleaning">
             <span>Fridge Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="fullbildong.png" alt="Full Building Cleaning">
+          <a href="./full-building.html" class="services-nav-item">
+            <img src="./fullbildong.png" alt="Full Building Cleaning">
             <span>Full Building Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="ironing.png" alt="Ironing Service">
+          <a href="./ironing.html" class="services-nav-item">
+            <img src="./ironing.png" alt="Ironing Service">
             <span>Ironing Service</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="kitchencleaning.png" alt="Kitchen Cleaning">
+          <a href="./kitchen-cleaning.html" class="services-nav-item">
+            <img src="./kitchencleaning.png" alt="Kitchen Cleaning">
             <span>Kitchen Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="kitechhelp.png" alt="Kitchen Help">
+          <a href="./kitchen-help.html" class="services-nav-item">
+            <img src="./kitechhelp.png" alt="Kitchen Help">
             <span>Kitchen Help</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="mirrorsclean.png" alt="Mirrors Cleaning">
+          <a href="./mirrors-cleaning.html" class="services-nav-item">
+            <img src="./mirrorsclean.png" alt="Mirrors Cleaning">
             <span>Mirrors Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="packing.png" alt="Packing">
+          <a href="./packing.html" class="services-nav-item">
+            <img src="./packing.png" alt="Packing">
             <span>Packing</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="shopclean.png" alt="Shop Cleaning">
+          <a href="./shop-cleaning.html" class="services-nav-item">
+            <img src="./shopclean.png" alt="Shop Cleaning">
             <span>Shop Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="stageclean.png" alt="Stage Cleaning">
+          <a href="./stage-cleaning.html" class="services-nav-item">
+            <img src="./stageclean.png" alt="Stage Cleaning">
             <span>Stage Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="sweppingmopping.png.png" alt="Sweeping and Mopping">
+          <a href="./sweeping-mopping.html" class="services-nav-item">
+            <img src="./sweppingmopping.png.png" alt="Sweeping and Mopping">
             <span>Sweeping &amp; Mopping</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="utlizesclean.png" alt="Utensils Cleaning">
+          <a href="./utensils-cleaning.html" class="services-nav-item">
+            <img src="./utlizesclean.png" alt="Utensils Cleaning">
             <span>Utensils Cleaning</span>
           </a>
 
-          <a href="javascript:void(0)" class="services-nav-item">
-            <img src="washing.png" alt="Washing Service">
+          <a href="./washing.html" class="services-nav-item">
+            <img src="./washing.png" alt="Washing Service">
             <span>Washing Service</span>
           </a>
 
         </div>
 
-        <a href="#services" class="services-nav-viewall">
+        <a href="./washing.html" class="services-nav-viewall">
           <span>View all services</span>
           <span aria-hidden="true">→</span>
         </a>
@@ -3499,7 +3543,7 @@ body.telugu-mode .sm-footer-mobile-logo{
 
     <div class="image-box">
       <img
-        src="image1.png"
+        src="./image1.png"
         alt="ScrubMate home appliance services"
         class="homepage-image" loading="eager" decoding="async" fetchpriority="high">
     </div>
@@ -3524,183 +3568,183 @@ body.telugu-mode .sm-footer-mobile-logo{
 
   <div class="services-grid">
 
-    <article class="service-card">
+    <a href="./ac.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="acclean.png"
+          src="./acclean.png"
           alt="Fan Cleaning"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">AC Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./bathroom.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="bathroomclean.png"
+          src="./bathroomclean.png"
           alt="Refrigerator Repair"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Bathroom Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./bedroom.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="bedroomclean.png"
+          src="./bedroomclean.png"
           alt="Washing Machine Repair"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Bedroom Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./bike.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="bikeclean.png"
+          src="./bikeclean.png"
           alt="AC Service"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Bike Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./dusting-wiping.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="dustingwiping.png"
+          src="./dustingwiping.png"
           alt="Geyser Repair"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Dusting Wiping</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./fan.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="fanclean.png"
+          src="./fanclean.png"
           alt="Microwave Repair"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Fan Clean</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./fridge.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="fridgeclean.png"
+          src="./fridgeclean.png"
           alt="Water Purifier Service"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Fridge Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./full-building.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="fullbildong.png"
+          src="./fullbildong.png"
           alt="Chimney Cleaning"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Full building Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./ironing.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="ironing.png"
+          src="./ironing.png"
           alt="Mixer Grinder Repair"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Ironing Service</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./kitchen-cleaning.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="kitchencleaning.png"
+          src="./kitchencleaning.png"
           alt="Dishwasher Service"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Kitchen Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./kitchen-help.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="kitechhelp.png"
+          src="./kitechhelp.png"
           alt="TV Repair"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Kitchen Help</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./mirrors-cleaning.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="mirrorsclean.png"
+          src="./mirrorsclean.png"
           alt="Inverter Service"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Mirrors Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./packing.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="packing.png"
+          src="./packing.png"
           alt="Deep Home Cleaning"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Packing</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./shop-cleaning.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="shopclean.png"
+          src="./shopclean.png"
           alt="Sofa Cleaning"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Shop Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./stage-cleaning.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="stageclean.png"
+          src="./stageclean.png"
           alt="Bathroom Cleaning"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Stage Cleaning</h3>
-    </article>
+    </a>
 
-    <article class="service-card">
+    <a href="./sweeping-mopping.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="sweppingmopping.png.png"
+          src="./sweppingmopping.png.png"
           alt="Kitchen Cleaning"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Swepping&Mopping Service</h3>
-    </article>
- <article class="service-card">
+    </a>
+ <a href="./utensils-cleaning.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="utlizesclean.png"
+          src="./utlizesclean.png"
           alt="Kitchen Cleaning"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Utensils Cleaning </h3>
-    </article>
- <article class="service-card">
+    </a>
+ <a href="./washing.html" class="service-card service-card-link">
       <div class="service-image-box">
         <img
-          src="washing.png"
+          src="./washing.png"
           alt="Kitchen Cleaning"
           class="service-image" loading="eager" decoding="async" fetchpriority="high">
       </div>
       <h3 class="service-name">Washing Service</h3>
-    </article>
+    </a>
 
   </div>
 
@@ -3722,7 +3766,7 @@ body.telugu-mode .sm-footer-mobile-logo{
     <div class="step-card">
       <span class="step-number">01</span>
 
-      <img src="workimage1.png" alt="Choose a service" loading="eager" decoding="async" fetchpriority="auto">
+      <img src="./workimage1.png" alt="Choose a service" loading="eager" decoding="async" fetchpriority="auto">
 
       <h3>Choose a Service</h3>
 
@@ -3732,7 +3776,7 @@ body.telugu-mode .sm-footer-mobile-logo{
     <div class="step-card">
       <span class="step-number">02</span>
 
-      <img src="workimage2.png" alt="Book your time" loading="eager" decoding="async" fetchpriority="auto">
+      <img src="./workimage2.png" alt="Book your time" loading="eager" decoding="async" fetchpriority="auto">
 
       <h3>Book Your Time</h3>
 
@@ -3742,7 +3786,7 @@ body.telugu-mode .sm-footer-mobile-logo{
     <div class="step-card">
       <span class="step-number">03</span>
 
-      <img src="workimage3.png" alt="Cleaning service" loading="eager" decoding="async" fetchpriority="auto">
+      <img src="./workimage3.png" alt="Cleaning service" loading="eager" decoding="async" fetchpriority="auto">
 
       <h3>We Get It Done</h3>
 
@@ -3752,7 +3796,7 @@ body.telugu-mode .sm-footer-mobile-logo{
     <div class="step-card">
       <span class="step-number">04</span>
 
-      <img src="workimage4.png" alt="Relax and enjoy" loading="eager" decoding="async" fetchpriority="auto">
+      <img src="./workimage4.png" alt="Relax and enjoy" loading="eager" decoding="async" fetchpriority="auto">
 
       <h3>Relax and Enjoy</h3>
 
@@ -3896,7 +3940,7 @@ body.telugu-mode .sm-footer-mobile-logo{
     <article class="trust-card">
       <div class="trust-image-wrap">
         <img
-          src="trustedhelpers.png"
+          src="./trustedhelpers.png"
           alt="Trusted Helpers"
           class="trust-image" loading="eager" decoding="async" fetchpriority="auto">
       </div>
@@ -3911,7 +3955,7 @@ body.telugu-mode .sm-footer-mobile-logo{
     <article class="trust-card">
       <div class="trust-image-wrap">
         <img
-          src="flexibleimage.png"
+          src="./flexibleimage.png"
           alt="Flexible Booking"
           class="trust-image" loading="eager" decoding="async" fetchpriority="auto">
       </div>
@@ -3926,7 +3970,7 @@ body.telugu-mode .sm-footer-mobile-logo{
     <article class="trust-card">
       <div class="trust-image-wrap">
         <img
-          src="help image.png"
+          src="./help image.png"
           alt="Local Support"
           class="trust-image" loading="eager" decoding="async" fetchpriority="auto">
       </div>
