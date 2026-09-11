@@ -4622,6 +4622,67 @@ body{
   }
 }
 
+
+
+/* ===== LANGUAGE SWITCH: AC PAGE TELUGU FONT ===== */
+body.telugu-mode .ac-detail-heading h1,
+body.telugu-mode .ac-detail-subtitle,
+body.telugu-mode .ac-detail-label,
+body.telugu-mode .ac-detail-content h2,
+body.telugu-mode .ac-detail-content > p,
+body.telugu-mode .ac-point p,
+body.telugu-mode .ac-book-button,
+body.telugu-mode .ac-inclusion-column h2,
+body.telugu-mode .ac-inclusion-item,
+body.telugu-mode .ac-time-heading h2,
+body.telugu-mode .ac-time-heading p,
+body.telugu-mode .ac-time-name,
+body.telugu-mode .ac-time-mins,
+body.telugu-mode .more-services-heading h2,
+body.telugu-mode .more-services-heading p,
+body.telugu-mode .more-service-name,
+body.telugu-mode .ac-mobile-book-info,
+body.telugu-mode .ac-mobile-book-btn,
+body.telugu-mode .sm-footer-tagline,
+body.telugu-mode .sm-footer-badges,
+body.telugu-mode .sm-footer-column,
+body.telugu-mode .sm-footer-contact,
+body.telugu-mode .sm-footer-bottom,
+body.telugu-mode .sm-footer-mobile-tagline,
+body.telugu-mode .sm-footer-mobile-links,
+body.telugu-mode .sm-footer-mobile-place{
+  font-family:"Noto Sans Telugu",sans-serif !important;
+}
+
+
+
+/* ===== LANGUAGE SWITCH MOBILE TAP FIX ===== */
+.language-switch,
+.language-button{
+  position:relative;
+  z-index:1000002;
+}
+
+.language-button{
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+  pointer-events:auto !important;
+  user-select:none;
+  -webkit-user-select:none;
+}
+
+
+
+/* Footer always remains English */
+body.telugu-mode .sm-footer,
+body.telugu-mode .sm-footer *{
+  font-family:"Poppins",sans-serif;
+}
+body.telugu-mode .sm-footer-logo,
+body.telugu-mode .sm-footer-mobile-logo{
+  font-family:"Merienda",cursive !important;
+}
+
 </style>
 <link rel="preload" as="image" href="image1.png">
 <link rel="preload" as="image" href="acclean.png">
@@ -4897,6 +4958,7 @@ aria-expanded="false"
 
   <section class="ac-detail-heading">
     <h1>AC Cleaning</h1>
+    <p class="ac-detail-subtitle">ScrubMate AC Cleaning</p>
   </section>
 
   <section class="ac-detail-section">
@@ -5302,28 +5364,29 @@ const servicesGrid =
 document.querySelector(".services-grid");
 
 function updateServiceColumns() {
-const isMobile = window\.innerWidth <= 600;
+  if (!servicesGrid) return;
 
+  const isMobile = window.innerWidth <= 600;
 
-servicesGrid.style.setProperty(
-  "--service-columns",
-  isMobile ? "3" : "8"
-);
-
-
+  servicesGrid.style.setProperty(
+    "--service-columns",
+    isMobile ? "3" : "8"
+  );
 }
 
-updateServiceColumns();
+if (servicesGrid) {
+  updateServiceColumns();
 
-window\.addEventListener(
-"resize",
-updateServiceColumns
-);
+  window.addEventListener(
+    "resize",
+    updateServiceColumns
+  );
 
-window\.addEventListener(
-"orientationchange",
-updateServiceColumns
-);
+  window.addEventListener(
+    "orientationchange",
+    updateServiceColumns
+  );
+}
 
 /* English to Telugu translations */
 
@@ -5551,7 +5614,181 @@ const teluguTranslations = {
 "మాతో చేరండి",
 
 "Tanuku – 534211":
-"తణుకు – 534211"
+"తణుకు – 534211",
+
+"ScrubMate AC Cleaning":
+"ScrubMate ఏసీ శుభ్రపరిచే సేవ",
+
+"SCRUBMATE AC CLEANING":
+"SCRUBMATE ఏసీ శుభ్రపరిచే సేవ",
+
+"A cleaner AC, a fresher room.":
+"శుభ్రమైన ఏసీ, మరింత తాజా గది.",
+
+"Dust and dirt can collect around your AC over time. Our AC cleaning service is designed to make the unit look cleaner and help keep the surrounding area neat and fresh.":
+"కాలక్రమేణా మీ ఏసీ చుట్టూ దుమ్ము మరియు మురికి పేరుకుపోవచ్చు. మా ఏసీ శుభ్రపరిచే సేవ యూనిట్‌ను శుభ్రంగా ఉంచి, చుట్టుపక్కల ప్రదేశాన్ని neatగా మరియు తాజాగాను ఉంచేందుకు సహాయపడుతుంది.",
+
+"Careful cleaning of accessible AC surfaces":
+"అందుబాటులో ఉన్న ఏసీ భాగాలను జాగ్రత్తగా శుభ్రపరచడం",
+
+"Dust and visible dirt removal":
+"దుమ్ము మరియు కనిపించే మురికిని తొలగించడం",
+
+"Clean and tidy service experience":
+"శుభ్రమైన మరియు neat సేవా అనుభవం",
+
+"Book AC Cleaning":
+"ఏసీ క్లీనింగ్ బుక్ చేయండి",
+
+"What's included":
+"ఏవి చేర్చబడ్డాయి",
+
+"Cleaning of accessible outer AC surfaces.":
+"అందుబాటులో ఉన్న ఏసీ బయటి భాగాలను శుభ్రపరచడం.",
+
+"Dust removal from accessible filters and vents.":
+"అందుబాటులో ఉన్న ఫిల్టర్లు మరియు వెంట్స్ నుంచి దుమ్ము తొలగించడం.",
+
+"Wiping and cleaning around the AC unit.":
+"ఏసీ యూనిట్ చుట్టూ తుడిచి శుభ్రపరచడం.",
+
+"Basic cleanup of the service area after work.":
+"పని పూర్తయ్యాక సేవ చేసిన ప్రదేశాన్ని ప్రాథమికంగా శుభ్రపరచడం.",
+
+"What's not included":
+"ఏవి చేర్చబడవు",
+
+"Gas filling or gas leakage repair.":
+"గ్యాస్ ఫిల్లింగ్ లేదా గ్యాస్ లీకేజ్ రిపేర్.",
+
+"Electrical or PCB repair.":
+"ఎలక్ట్రికల్ లేదా PCB రిపేర్.",
+
+"Spare parts replacement.":
+"స్పేర్ పార్ట్స్ మార్చడం.",
+
+"AC installation or uninstallation.":
+"ఏసీ ఇన్‌స్టాలేషన్ లేదా అన్‌ఇన్‌స్టాలేషన్.",
+
+"How long does it take?":
+"ఎంత సమయం పడుతుంది?",
+
+"Estimations are based on 2BHK.":
+"అంచనా సమయాలు 2BHK ఆధారంగా ఉన్నాయి.",
+
+"Utensils":
+"పాత్రలు",
+
+"Balcony Cleaning":
+"బాల్కనీ శుభ్రపరచడం",
+
+"Fan Cleaning":
+"ఫ్యాన్ శుభ్రపరచడం",
+
+"Sweeping and Mopping":
+"ఊడ్చడం మరియు తుడవడం",
+
+"Dusting":
+"దుమ్ము తుడవడం",
+
+"Window Cleaning":
+"కిటికీలు శుభ్రపరచడం",
+
+"Ironing":
+"ఇస్త్రీ",
+
+"Sweeping":
+"ఊడ్చడం",
+
+"Kitchen Prep":
+"వంటగది ప్రిపరేషన్",
+
+"Laundry":
+"లాండ్రీ",
+
+"40 mins":
+"40 నిమిషాలు",
+
+"20 mins":
+"20 నిమిషాలు",
+
+"30 mins":
+"30 నిమిషాలు",
+
+"25 mins":
+"25 నిమిషాలు",
+
+"45 mins":
+"45 నిమిషాలు",
+
+"Clean Every Corner":
+"ప్రతి మూలను శుభ్రంగా ఉంచండి",
+
+"Explore more ScrubMate services for a cleaner, fresher home.":
+"మరింత శుభ్రమైన, తాజా ఇంటి కోసం మరిన్ని ScrubMate సేవలను చూడండి.",
+
+"Dusting & Wiping":
+"దుమ్ము తుడవడం",
+
+"Full Building Cleaning":
+"పూర్తి భవనం శుభ్రపరచడం",
+
+"Sweeping & Mopping":
+"ఊడ్చడం మరియు తుడవడం",
+
+"Washing":
+"వాషింగ్",
+
+"Professional cleaning service":
+"ప్రొఫెషనల్ క్లీనింగ్ సేవ",
+
+"Book now":
+"ఇప్పుడే బుక్ చేయండి",
+
+"Simple, reliable home services that make everyday life easier.":
+"రోజువారీ జీవితాన్ని సులభం చేసే సరళమైన, నమ్మదగిన గృహ సేవలు.",
+
+"Trusted Home Care":
+"నమ్మదగిన హోమ్ కేర్",
+
+"English + Telugu":
+"ఇంగ్లీష్ + తెలుగు",
+
+"Home Cleaning":
+"ఇంటి శుభ్రపరిచే సేవ",
+
+"Appliance Cleaning":
+"పరికరాల శుభ్రపరిచే సేవ",
+
+"Explore":
+"చూడండి",
+
+"Why ScrubMate":
+"ఎందుకు ScrubMate",
+
+"Customer Reviews":
+"కస్టమర్ సమీక్షలు",
+
+"Need Help?":
+"సహాయం కావాలా?",
+
+"Book the service you need and choose a convenient date and time.":
+"మీకు అవసరమైన సేవను బుక్ చేసి, అనుకూలమైన తేదీ మరియు సమయాన్ని ఎంచుకోండి.",
+
+"Explore Services":
+"సేవలను చూడండి",
+
+"© Cezonal Solutions PVT Ltd. All rights reserved.":
+"© Cezonal Solutions PVT Ltd. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.",
+
+"Help & FAQs":
+"సహాయం & ప్రశ్నలు",
+
+"Home care made simple.":
+"ఇంటి సంరక్షణ ఇప్పుడు సులభం.",
+
+"Reviews":
+"సమీక్షలు"
 };
 
 /* Select all text that needs translation */
@@ -5594,7 +5831,28 @@ document.querySelectorAll(
   ".faq-question span:first-child",
   ".faq-answer-inner",
 
-  ".join-us-title"
+  ".join-us-title",
+
+  /* AC detail page */
+  ".ac-detail-heading h1",
+  ".ac-detail-subtitle",
+  ".ac-detail-label",
+  ".ac-detail-content h2",
+  ".ac-detail-content > p",
+  ".ac-point p",
+  ".ac-book-button",
+  ".ac-inclusion-column h2",
+  ".ac-inclusion-item > span:last-child",
+  ".ac-time-heading h2",
+  ".ac-time-heading p",
+  ".ac-time-name",
+  ".ac-time-mins",
+  ".more-services-heading h2",
+  ".more-services-heading p",
+  ".more-service-name",
+  ".ac-mobile-book-info strong",
+  ".ac-mobile-book-info span",
+  ".ac-mobile-book-btn"
 ].join(",")
 
 
@@ -5650,10 +5908,14 @@ document.title = isTelugu
   ? "స్క్రబ్‌మేట్"
   : "ScrubMate";
 
-localStorage.setItem(
-  "scrubmate-language",
-  language
-);
+try {
+  localStorage.setItem(
+    "scrubmate-language",
+    language
+  );
+} catch (error) {
+  /* Language switching still works even if storage is blocked. */
+}
 
 
 }
@@ -5666,13 +5928,19 @@ setLanguage(button.dataset.lang);
 
 /* Remember the selected language */
 
-const savedLanguage =
-localStorage.getItem(
-"scrubmate-language"
-);
+let savedLanguage = "en";
+
+try {
+  savedLanguage =
+    localStorage.getItem(
+      "scrubmate-language"
+    ) || "en";
+} catch (error) {
+  savedLanguage = "en";
+}
 
 setLanguage(
-savedLanguage === "te" ? "te" : "en"
+  savedLanguage === "te" ? "te" : "en"
 );
 
 /* Smooth reveal for trust section images */
